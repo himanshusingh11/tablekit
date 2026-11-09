@@ -1,0 +1,31 @@
+{
+  "name": "tablekit-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@10.33.4",
+  "scripts": {
+    "build": "pnpm --filter react-tablekit build",
+    "build:docs": "pnpm --filter react-tablekit build && pnpm --filter docs build",
+    "dev": "pnpm --filter react-tablekit build && pnpm --filter docs dev",
+    "test": "pnpm --filter react-tablekit test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "size": "pnpm --filter react-tablekit size",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3",
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^17.14.0",
+    "prettier": "^3.9.10",
+    "typescript": "~5.6.3",
+    "typescript-eslint": "^8.72.1"
+  }
+}
