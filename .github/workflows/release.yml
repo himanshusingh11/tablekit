@@ -14,6 +14,9 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      # The job is a no-op until an NPM_TOKEN repository secret is configured.
+      HAS_NPM_TOKEN: ${{ secrets.NPM_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -25,6 +28,7 @@ jobs:
       - run: pnpm test
       # Opens a "Version Packages" PR when changesets exist; publishes to npm when that PR is merged.
       - uses: changesets/action@v1
+        if: env.HAS_NPM_TOKEN == 'true'
         with:
           version: pnpm version-packages
           publish: pnpm release
