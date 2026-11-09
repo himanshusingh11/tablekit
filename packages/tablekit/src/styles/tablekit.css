@@ -1,0 +1,221 @@
+/* TableKit default theme. Override any variable on .tk-root (or a parent) to theme. */
+.tk-root {
+  --tk-font: inherit;
+  --tk-font-size: 14px;
+  --tk-bg: #ffffff;
+  --tk-fg: #1f2328;
+  --tk-muted: #656d76;
+  --tk-border: #d8dee4;
+  --tk-header-bg: #f6f8fa;
+  --tk-header-fg: #1f2328;
+  --tk-row-odd-bg: #fbfcfd;
+  --tk-row-hover-bg: #f1f5fb;
+  --tk-row-selected-bg: #e7f0ff;
+  --tk-focus: #2f6feb;
+  --tk-accent: #2f6feb;
+  --tk-cell-padding: 0 12px;
+  --tk-radius: 8px;
+  --tk-pinned-shadow: 4px 0 6px -4px rgba(0, 0, 0, 0.18);
+
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid var(--tk-border);
+  border-radius: var(--tk-radius);
+  background: var(--tk-bg);
+  color: var(--tk-fg);
+  font-family: var(--tk-font);
+  font-size: var(--tk-font-size);
+  overflow: hidden;
+}
+
+.tk-root *,
+.tk-root *::before,
+.tk-root *::after {
+  box-sizing: border-box;
+}
+
+.tk-scroller {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  outline: none;
+  overscroll-behavior: contain;
+}
+
+.tk-head {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  min-width: 100%;
+  width: max-content;
+}
+
+.tk-header-row,
+.tk-row {
+  display: flex;
+  min-width: 100%;
+}
+
+.tk-header-row {
+  background: var(--tk-header-bg);
+  border-bottom: 1px solid var(--tk-border);
+}
+
+.tk-body {
+  position: relative;
+  min-width: 100%;
+}
+
+.tk-row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--tk-bg);
+  border-bottom: 1px solid var(--tk-border);
+  will-change: transform;
+}
+.tk-row-odd {
+  background: var(--tk-row-odd-bg);
+}
+.tk-row:hover {
+  background: var(--tk-row-hover-bg);
+}
+.tk-row-selected,
+.tk-row-selected:hover {
+  background: var(--tk-row-selected-bg);
+}
+
+.tk-cell,
+.tk-header-cell {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: var(--tk-cell-padding);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: none;
+  background: inherit;
+}
+.tk-header-cell {
+  font-weight: 600;
+  color: var(--tk-header-fg);
+  user-select: none;
+  gap: 4px;
+}
+.tk-header-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tk-sortable {
+  cursor: pointer;
+}
+.tk-sort-indicator {
+  font-size: 0.7em;
+  color: var(--tk-muted);
+  flex: none;
+}
+.tk-sort-indicator[data-dir='asc'],
+.tk-sort-indicator[data-dir='desc'] {
+  color: var(--tk-accent);
+}
+.tk-sort-indicator sup {
+  font-size: 0.85em;
+  margin-left: 1px;
+}
+
+.tk-align-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+.tk-align-center {
+  justify-content: center;
+  text-align: center;
+}
+
+.tk-pinned {
+  position: sticky;
+  z-index: 1;
+  background: var(--tk-bg);
+}
+.tk-row-odd .tk-pinned {
+  background: var(--tk-row-odd-bg);
+}
+.tk-row:hover .tk-pinned {
+  background: var(--tk-row-hover-bg);
+}
+.tk-row-selected .tk-pinned {
+  background: var(--tk-row-selected-bg);
+}
+.tk-header-row .tk-pinned {
+  background: var(--tk-header-bg);
+  z-index: 4;
+}
+.tk-last-pinned {
+  box-shadow: var(--tk-pinned-shadow);
+  clip-path: inset(0 -10px 0 0);
+}
+
+.tk-select-cell {
+  justify-content: center;
+  padding: 0;
+  user-select: none;
+}
+.tk-checkbox {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--tk-accent);
+  cursor: pointer;
+}
+
+.tk-cell:focus-visible,
+.tk-header-cell:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--tk-focus);
+  z-index: 2;
+}
+
+.tk-resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 100%;
+  cursor: col-resize;
+  touch-action: none;
+  z-index: 1;
+}
+.tk-resizer:hover,
+.tk-resizer:active {
+  background: var(--tk-accent);
+  opacity: 0.5;
+}
+
+.tk-empty-row {
+  display: flex;
+}
+.tk-empty {
+  width: 100%;
+  padding: 32px 12px;
+  text-align: center;
+  color: var(--tk-muted);
+}
+
+.tk-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--tk-bg) 70%, transparent);
+  color: var(--tk-muted);
+  font-weight: 500;
+  z-index: 10;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tk-row-selected {
+    transition: background-color 80ms linear;
+  }
+}
