@@ -213,9 +213,3 @@
   font-weight: 500;
   z-index: 10;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .tk-row-selected {
-    transition: background-color 80ms linear;
-  }
-}
