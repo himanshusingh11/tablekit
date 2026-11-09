@@ -1,6 +1,6 @@
 {
   "name": "react-tablekit",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A small, fast, accessible React data table: 100K-row virtualization, sorting, filtering, resizing, pinning, selection and full keyboard navigation.",
   "keywords": [
     "react",
@@ -56,6 +56,13 @@
     },
     "./styles.css": "./dist/styles.css",
     "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "core": [
+        "./dist/core.d.ts"
+      ]
+    }
   },
   "files": [
     "dist",
