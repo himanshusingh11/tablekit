@@ -21,6 +21,8 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - name: Security audit (fails on high/critical)
+        run: pnpm audit --audit-level high
       - run: pnpm lint
       - run: pnpm format:check
       - run: pnpm build

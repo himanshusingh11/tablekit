@@ -3,3 +3,7 @@ packages:
   - 'apps/*'
 onlyBuiltDependencies:
   - esbuild
+
+# Security: force patched minimatch for typescript-eslint (GHSA ReDoS advisory).
+overrides:
+  'minimatch@>=7.0.0 <11.0.1': '^11.0.1'
