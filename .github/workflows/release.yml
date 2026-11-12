@@ -27,7 +27,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
       # Opens a "Version Packages" PR when changesets exist; publishes to npm when that PR is merged.
-      - uses: changesets/action@v1
+      - uses: changesets/action@v2
         if: env.HAS_NPM_TOKEN == 'true'
         with:
           version: pnpm version-packages
