@@ -22,7 +22,7 @@ When these are interleaved inside components, logic can only be tested through r
 - `getColumnLayout`, `clampWidth`, `getColumnWidth`
 - `getVirtualRange`, `getScrollTopForIndex`
 
-`src/react/` wires these into `useTable` (state + memoization) and `<DataTable />` (DOM, events, ARIA). The core ships as its own entry point, `react-tablekit/core`, without the `"use client"` banner, so it can run on a server (e.g. the server-side example uses the same `sortRows`/`filterRows` to fake an API).
+`src/react/` wires these into `useTable` (state + memoization) and `<DataTable />` (DOM, events, ARIA). The core ships as its own entry point, `@himanshusingh11/tablekit/core`, without the `"use client"` banner, so it can run on a server (e.g. the server-side example uses the same `sortRows`/`filterRows` to fake an API).
 
 ## Consequences
 

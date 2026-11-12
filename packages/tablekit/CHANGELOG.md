@@ -1,4 +1,4 @@
-# react-tablekit
+# @himanshusingh11/tablekit
 
 ## 0.1.0
 

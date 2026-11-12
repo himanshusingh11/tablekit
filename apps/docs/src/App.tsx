@@ -122,7 +122,7 @@ export function App() {
         </nav>
         <div className="sidebar-links">
           <a href="https://github.com/himanshusingh11/tablekit">GitHub</a>
-          <a href="https://www.npmjs.com/package/react-tablekit">npm</a>
+          <a href="https://www.npmjs.com/package/@himanshusingh11/tablekit">npm</a>
         </div>
       </aside>
       <main className="content">

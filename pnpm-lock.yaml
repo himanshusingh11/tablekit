@@ -35,7 +35,7 @@ importers:
 
   apps/docs:
     dependencies:
-      react-tablekit:
+      '@himanshusingh11/tablekit':
         specifier: workspace:*
         version: link:../../packages/tablekit
     devDependencies:

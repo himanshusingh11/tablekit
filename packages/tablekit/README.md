@@ -2,10 +2,10 @@
 
 **A small, fast, accessible React data table.** Virtualization and keyboard accessibility are built in, not bolted on.
 
-[![npm](https://img.shields.io/npm/v/react-tablekit.svg)](https://www.npmjs.com/package/react-tablekit)
+[![npm](https://img.shields.io/npm/v/@himanshusingh11/tablekit.svg)](https://www.npmjs.com/package/@himanshusingh11/tablekit)
 [![CI](https://github.com/himanshusingh11/tablekit/actions/workflows/ci.yml/badge.svg)](https://github.com/himanshusingh11/tablekit/actions/workflows/ci.yml)
 [![bundle](https://img.shields.io/badge/size-~5%20KB%20brotli-brightgreen)](#bundle-size)
-[![license](https://img.shields.io/npm/l/react-tablekit.svg)](https://github.com/himanshusingh11/tablekit/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/@himanshusingh11/tablekit.svg)](https://github.com/himanshusingh11/tablekit/blob/main/LICENSE)
 
 **[Docs & live demos →](https://himanshusingh11.github.io/tablekit/)**
 
@@ -21,7 +21,7 @@
 ## Install
 
 ```sh
-npm install react-tablekit
+npm install @himanshusingh11/tablekit
 ```
 
 Peer dependencies: `react` and `react-dom` 18 or 19.
@@ -29,8 +29,8 @@ Peer dependencies: `react` and `react-dom` 18 or 19.
 ## Quick start
 
 ```tsx
-import { useTable, DataTable, type ColumnDef } from 'react-tablekit';
-import 'react-tablekit/styles.css';
+import { useTable, DataTable, type ColumnDef } from '@himanshusingh11/tablekit';
+import '@himanshusingh11/tablekit/styles.css';
 
 type User = { id: string; name: string; email: string; age: number };
 
@@ -143,7 +143,7 @@ The returned table exposes `rows`, `rowIds`, `state`, `toggleSort`, `setSorting`
 
 `table`, `height` (400), `rowHeight` (40), `headerHeight`, `overscan` (5), `loading`, `emptyState`, `loadingState`, `aria-label`, `aria-labelledby`, `onRowClick`, `getRowClassName`, `className`, `style`.
 
-### `react-tablekit/core`
+### `@himanshusingh11/tablekit/core`
 
 Framework-agnostic pure functions (no React): `sortRows`, `filterRows`, `getNextSorting`, `selectRange`, `getColumnLayout`, `getVirtualRange`, …
 

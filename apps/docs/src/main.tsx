@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import 'react-tablekit/styles.css';
+import '@himanshusingh11/tablekit/styles.css';
 import './styles.css';
 import { App } from './App';
 

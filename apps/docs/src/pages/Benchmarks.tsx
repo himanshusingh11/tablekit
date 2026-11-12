@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { DataTable, useTable } from 'react-tablekit';
+import { DataTable, useTable } from '@himanshusingh11/tablekit';
 import { personColumns } from '../columns';
 import { makePeople, type Person } from '../data';
 

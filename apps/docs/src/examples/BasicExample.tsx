@@ -1,5 +1,5 @@
-import { DataTable, useTable, type ColumnDef } from 'react-tablekit';
-import 'react-tablekit/styles.css';
+import { DataTable, useTable, type ColumnDef } from '@himanshusingh11/tablekit';
+import '@himanshusingh11/tablekit/styles.css';
 
 type User = { id: string; name: string; email: string; age: number };
 

@@ -119,14 +119,14 @@ table.setState(partial | updater)
         ['className? / style?', '', 'Applied to the root; set CSS variables via style.'],
       ])}
 
-      <h2 id="core">react-tablekit/core</h2>
+      <h2 id="core">@himanshusingh11/tablekit/core</h2>
       <p>
         The pure, framework-agnostic logic (no React import), handy on a server or in tests:{' '}
         <code>sortRows</code>, <code>filterRows</code>, <code>getNextSorting</code>,{' '}
         <code>selectRange</code>, <code>getColumnLayout</code>, <code>getVirtualRange</code>, and
         more.
       </p>
-      <Code>{`import { sortRows, filterRows } from 'react-tablekit/core';`}</Code>
+      <Code>{`import { sortRows, filterRows } from '@himanshusingh11/tablekit/core';`}</Code>
 
       <h2 id="css">CSS variables</h2>
       <Code lang="css">{`

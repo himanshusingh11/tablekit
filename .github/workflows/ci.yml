@@ -25,7 +25,7 @@ jobs:
       - run: pnpm format:check
       - run: pnpm build
       - run: pnpm typecheck
-      - run: pnpm --filter react-tablekit coverage
+      - run: pnpm --filter @himanshusingh11/tablekit coverage
       - name: Bundle size budget
         run: pnpm size
 

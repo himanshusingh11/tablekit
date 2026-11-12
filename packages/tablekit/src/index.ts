@@ -1,6 +1,6 @@
 export * from './react';
 export {
-  // Pure helpers, re-exported for convenience (also available from 'react-tablekit/core').
+  // Pure helpers, re-exported for convenience (also available from '@himanshusingh11/tablekit/core').
   sortRows,
   getNextSorting,
   compareValues,

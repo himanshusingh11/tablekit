@@ -36,7 +36,7 @@ export function GettingStarted() {
       </ul>
 
       <h2>Install</h2>
-      <Code lang="sh">{`npm install react-tablekit`}</Code>
+      <Code lang="sh">{`npm install @himanshusingh11/tablekit`}</Code>
 
       <h2>Quick start</h2>
       <Demo description="Click a header to sort (shift+click to multi-sort). Tab into the grid and use the arrow keys.">

@@ -1,4 +1,4 @@
-import type { ColumnDef } from 'react-tablekit';
+import type { ColumnDef } from '@himanshusingh11/tablekit';
 import { currency, type Person } from './data';
 
 export const personColumns: ColumnDef<Person>[] = [

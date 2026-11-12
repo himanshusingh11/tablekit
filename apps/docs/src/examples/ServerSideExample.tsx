@@ -6,8 +6,8 @@ import {
   useTable,
   type ColumnFiltersState,
   type SortingState,
-} from 'react-tablekit';
-import 'react-tablekit/styles.css';
+} from '@himanshusingh11/tablekit';
+import '@himanshusingh11/tablekit/styles.css';
 import { personColumns } from '../columns';
 import { makePeople, type Person } from '../data';
 

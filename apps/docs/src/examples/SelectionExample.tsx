@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import { DataTable, useTable } from 'react-tablekit';
-import 'react-tablekit/styles.css';
+import { DataTable, useTable } from '@himanshusingh11/tablekit';
+import '@himanshusingh11/tablekit/styles.css';
 import { personColumns } from '../columns';
 import { currency, makePeople } from '../data';
 

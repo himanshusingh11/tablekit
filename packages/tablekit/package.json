@@ -1,5 +1,5 @@
 {
-  "name": "react-tablekit",
+  "name": "@himanshusingh11/tablekit",
   "version": "0.1.0",
   "description": "A small, fast, accessible React data table: 100K-row virtualization, sorting, filtering, resizing, pinning, selection and full keyboard navigation.",
   "keywords": [
@@ -85,7 +85,7 @@
   },
   "size-limit": [
     {
-      "name": "react-tablekit (JS, ESM)",
+      "name": "@himanshusingh11/tablekit (JS, ESM)",
       "path": "dist/index.js",
       "import": "{ useTable, DataTable }",
       "ignore": [
@@ -95,7 +95,7 @@
       "limit": "10 KB"
     },
     {
-      "name": "react-tablekit/styles.css",
+      "name": "@himanshusingh11/tablekit/styles.css",
       "path": "dist/styles.css",
       "limit": "2 KB",
       "rolldown": false
